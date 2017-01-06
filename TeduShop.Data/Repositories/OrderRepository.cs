@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IOrderRepository { }
+    public interface IOrderRepository : IRepository<Order> { }
     class OrderRepository : RepositoryBase<Order>, IOrderRepository
     {
         public OrderRepository(IDbFactory DbFactory) : base(DbFactory)
